@@ -1,25 +1,21 @@
 # Python API 
 
-Below is a trimmed down readme highlighting the specific skills executed in this assignment.
-
-## Background
-
-Whether financial, political, or social -- data's true power lies in its ability to answer questions definitively. So let's take what you've learned about Python requests, APIs, and JSON traversals to answer a fundamental question: "What's the weather like as we approach the equator?"
+Data's true power lies in its ability to answer questions definitively. In this repository I take what I've learned about Python requests, APIs, and JSON traversals to answer a fundamental question: "What's the weather like as we approach the equator?"
 
 ## Part I - WeatherPy
 
-In this example, you'll be creating a Python script to visualize the weather of 500+ cities across the world of varying distance from the equator. To accomplish this, you'll be utilizing a [simple Python library](https://pypi.python.org/pypi/citipy), the [OpenWeatherMap API](https://openweathermap.org/api), and a little common sense to create a representative model of weather across world cities.
+For part one I create a Python script to visualize the weather of 500+ cities across the world of varying distance from the equator. To accomplish this, I will be utilizing a [simple Python library](https://pypi.python.org/pypi/citipy), and the [OpenWeatherMap API](https://openweathermap.org/api) to create a representative model of weather across world cities.
 
-Your first requirement is to create a series of scatter plots to showcase the following relationships:
+To start I created a series of scatter plots to showcase the following relationships:
 
 * Temperature (F) vs. Latitude
 * Humidity (%) vs. Latitude
 * Cloudiness (%) vs. Latitude
 * Wind Speed (mph) vs. Latitude
 
-After each plot add a sentence or too explaining what the code is and analyzing.
+After each plot I added a sentence or too explaining what the code is and analyzing.
 
-Your second requirement is to run linear regression on each relationship, only this time separating them into Northern Hemisphere (greater than or equal to 0 degrees latitude) and Southern Hemisphere (less than 0 degrees latitude):
+The second part is a linear regression on each relationship, only this time I separate them into Northern Hemisphere (greater than or equal to 0 degrees latitude) and Southern Hemisphere (less than 0 degrees latitude):
 
 * Northern Hemisphere - Temperature (F) vs. Latitude
 * Southern Hemisphere - Temperature (F) vs. Latitude
@@ -30,14 +26,13 @@ Your second requirement is to run linear regression on each relationship, only t
 * Northern Hemisphere - Wind Speed (mph) vs. Latitude
 * Southern Hemisphere - Wind Speed (mph) vs. Latitude
 
-After each pair of plots explain what the linear regression is modeling such as any relationships you notice and any other analysis you may have.
+After each pair of plots I explain what the linear regression is modeling such as any relationships you notice and any other analysis I deemed necessary.
 
 ### Part II - VacationPy
 
-* Create a heat map that displays the humidity for every city from the part I of the homework.
+* I created a heat map that displays the humidity for every city from the part I.
 
-
-* Narrow down the DataFrame to find your ideal weather condition. For example:
+* Then I narrow down the DataFrame to find your ideal weather condition:
 
   * A max temperature lower than 80 degrees but higher than 70.
 
@@ -47,11 +42,10 @@ After each pair of plots explain what the linear regression is modeling such as 
 
   * Drop any rows that don't contain all three conditions. You want to be sure the weather is ideal.
 
-  * **Note:** Feel free to adjust to your specifications but be sure to limit the number of rows returned by your API requests to a reasonable number.
 
-* Using Google Places API to find the first hotel for each city located within 5000 meters of your coordinates.
+* Using Google Places API I find the first hotel for each city located within 5000 meters of your coordinates.
 
-* Plot the hotels on top of the humidity heatmap with each pin containing the **Hotel Name**, **City**, and **Country**.
+* I then plot the hotels on top of the humidity heatmap with each pin containing the **Hotel Name**, **City**, and **Country**.
 
 ### Copyright
 
